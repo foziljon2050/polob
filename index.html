@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Полибий</title>
+</head>
+<body background="1.png">
+
+<div class="bloki1">
+    <table>
+		<h1>Полибий</h1>
+        <tr>
+            <th></th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th>
+        </tr>
+        <tr>
+            <th>1</th><td>А</td><td>Б</td><td>В</td><td>Г</td><td>Ғ</td><td>Д</td>
+        </tr>
+        <tr>
+            <th>2</th><td>Е</td><td>Ё</td><td>Ж</td><td>З</td><td>И</td><td>Ӣ</td>
+        </tr>
+        <tr>
+            <th>3</th><td>Й</td><td>К</td><td>Қ</td><td>Л</td><td>М</td><td>Н</td>
+        </tr>
+        <tr>
+            <th>4</th><td>О</td><td>П</td><td>Р</td><td>С</td><td>Т</td><td>У</td>
+        </tr>
+        <tr>
+            <th>5</th><td>Ӯ</td><td>Ф</td><td>Х</td><td>Ҳ</td><td>Ч</td><td>Ҷ</td>
+        </tr>
+        <tr>
+            <th>6</th><td>Ш</td><td>Ъ</td><td>Э</td><td>Ю</td><td>Я</td><td>-</td>
+        </tr>
+    </table>
+
+    <div class="input-section">
+        <label for="inputText">Калдро дохил намоед:</label>
+        <input type="text" id="inputText" placeholder="Матн ё рақамро дохил кунед.">
+        
+        <label for="mode">Режим:</label>
+        <select id="mode">
+            <option value="encrypt">Шифроват кардан</option>
+            <option value="decrypt">Дешифроват кардан</option>
+        </select>
+
+        <button onclick="processText()">Натиҷа гирифтан</button>
+    </div>
+
+    <div id="result">
+        Натиҷа: <span id="outputText"></span>
+    </div>
+</div>
+
+</body>
+</html>
